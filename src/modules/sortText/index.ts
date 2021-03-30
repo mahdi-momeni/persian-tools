@@ -7,12 +7,12 @@
  * @return { string[] | undefined}
  */
 function SortText(str: string | string[]): string[] | undefined {
-    if (!str) return;
+	if (!str) return;
 
-    const stringResult = typeof str === 'string' ? str.split(" ") : str;
-    stringResult.sort((a, b) => a.localeCompare(b, 'fa', {ignorePunctuation: true}));
+	const stringResult = typeof str === "string" ? str.split(" ") : str;
+	stringResult.sort((a, b) => a.localeCompare(b, "fa", { ignorePunctuation: true }));
 
-    return stringResult;
+	return stringResult;
 }
 
 export default SortText;
